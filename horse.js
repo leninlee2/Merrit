@@ -45,18 +45,10 @@ class Horse {
         let x = current.substring(0,1)
         let y = current.substring(1,2)
 
-        //start with random value
-        //let table = new Table()
         let horizontal = new TableData().GetHorizontal()
         
-        //index = horizontal.findIndex(x)
-        //console.log(x)
-        //console.log(y)
-        //console.log(horizontal)
         let index = this.GetIndex(x,horizontal)
-        //index = horizontal.indexOf(x)
         let line = index + 1
-        //console.log(line)
         
         let item = new TableData()
         //3x1-left

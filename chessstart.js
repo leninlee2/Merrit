@@ -15,8 +15,9 @@ app.get('/test', (req, res) => {
 
 app.post('/horseposition', express.json({type: '*/*'}), (req, res) => {
   //console.log(req.body.building)
-  console.log(req.body.current)
-  console.log(req.body.filled)
+  //console.log(req.body.current)
+  //console.log(req.body.filled)
+  console.log('servico ligado')
   result = new Horse().GetPositions(req.body.current,req.body.filled);
   res.write(JSON.stringify(result))
   res.end()
